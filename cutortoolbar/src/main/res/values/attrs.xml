@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    注意：declare-styleable中的属性name建议设置自定义类名，
+            因为这样的话，当使用该自定义属性时，按ctrl+alt+空格会有提示；如果任意取名，不会报错，但是没有提示
+    给自定义ToolBar添加属性
+    leftImage 左边的图片（reference反射）
+    rightImage 右边的图片（reference反射）
+    titleColor  中间文本的颜色 （颜色或者反射）
+    titleSize  中间文本的大小 （dimension尺寸）
+    titleText 中间文本的内容（String）
+    format的取值有：
+    1、reference  反射（如：src="@drawable/img"）
+    2、color    颜色 （如：textColor="#000"）
+    3、dimension   尺寸（如：padding="5dp"）
+    4、string   字符串（如：text="登录"）
+    5、boolean  布尔类型（如：alignParentTop="true|false"）
+    6、enum  枚举（如：gravity="center|left|right"）
+    7、flag
+    8、float
+    9、fraction
+    10、integer
+    -->
+    <declare-styleable name="CustorToolBar">
+        <attr name="leftImage" format="reference"/>
+        <attr name="rightImage" format="reference"/>
+        <attr name="titleColor" format="color|reference"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="titleText" format="string|reference"/>
+    </declare-styleable>
+</resources>

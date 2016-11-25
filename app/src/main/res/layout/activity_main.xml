@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liyunkun.week6_1custortoolbar.MainActivity">
+
+    <com.liyunkun.cutortoolbar.CustorToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F0"
+        app:leftImage="@drawable/ic_menu_back"
+        app:rightImage="@drawable/amb"
+        app:titleColor="#F00"
+        app:titleSize="16sp"
+        app:titleText="Hello"></com.liyunkun.cutortoolbar.CustorToolBar>
+</RelativeLayout>
